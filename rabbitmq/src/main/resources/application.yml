@@ -1,0 +1,19 @@
+server:
+  port: 8005
+spring:
+  rabbitmq:
+    addresses: wyginfo.cn
+    port: 5672
+    username: wyg
+    password: fHn8RLOOFXPFkIF0
+    #开启发送失败返回
+    publisher-returns: true
+    publisher-confirms: true
+    template:
+      mandatory: true
+
+## log路径
+logging:
+  file:
+    path: E:/logs
+
